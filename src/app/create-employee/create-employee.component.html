@@ -1,0 +1,39 @@
+<div class="col-md-6 offset-md-3">
+<h3>Add Customer</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-label">
+  <label>First Name</label>
+  <input type="text" class="form-control" id="firstName"
+         [(ngModel)]="employee.firstName" name="firstName">
+</div>
+  <div class="form-label">
+    <label>Last Name</label>
+    <input type="text" class="form-control" id="lastName"
+           [(ngModel)]="employee.lastName" name="lastName">
+  </div>
+  <div class="form-label">
+    <label>Email ID</label>
+    <input type="text" class="form-control" id="emailId"
+           [(ngModel)]="employee.emailId" name="emailId">
+  </div>
+  <div class="form-label">
+    <label>Bank Name</label>
+    <input type="text" class="form-control" id="bankname"
+           [(ngModel)]="employee.bankName" name="bankname">
+  </div>
+  <div class="form-label">
+    <label>Account Number</label>
+    <input type="text" class="form-control" id="accountNumber"
+           [(ngModel)]="employee.accountNumber" name="accountNumber">
+  </div>
+  <div class="form-label">
+    <label>Account Balance</label>
+    <input type="text" class="form-control" id="balance"
+           [(ngModel)]="employee.balance" name="balance">
+  </div>
+
+
+  <button class="btn btn-success" type="submit">"submit"</button>
+
+</form>
+</div>
