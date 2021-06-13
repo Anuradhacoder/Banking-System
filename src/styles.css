@@ -9,3 +9,12 @@
   text-align: center;
   color: white;
 }
+
+.container-img {
+  background-image: url("/assets/image/n3.jpg");
+}
+
+body {
+  background-image: url("/assets/image/n3.jpg");
+}
+

@@ -7,6 +7,7 @@ import {UpdateEmployeeComponent} from './update-employee/update-employee.compone
 import {EmployeeDetailsComponent} from './employee-details/employee-details.component';
 import {TransferMoneyComponent} from './transfer-money/transfer-money.component';
 import {TransferBalanceComponent} from './transfer-balance/transfer-balance.component';
+import {HomeComponent} from './home/home.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'transfer-balance/:id', component: TransferBalanceComponent},
   {path: '', redirectTo: 'employee', pathMatch: 'full'},
   {path: 'update-employee/:id', component: UpdateEmployeeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'employee-details/:id', component: EmployeeDetailsComponent}
 ];
 @NgModule({

@@ -11,6 +11,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { TransferMoneyComponent } from './transfer-money/transfer-money.component';
 import { TransferBalanceComponent } from './transfer-balance/transfer-balance.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TransferBalanceComponent } from './transfer-balance/transfer-balance.co
     EmployeeDetailsComponent,
     TransferMoneyComponent,
     TransferBalanceComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
