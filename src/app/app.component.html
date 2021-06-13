@@ -1,5 +1,9 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="home" routerLinkActive="active" class="nav-link">Home</a>
+    </li>
     <li class="nav-item">
       <a routerLink="employees" routerLinkActive="active" class="nav-link">Customer list</a>
     </li>
@@ -9,16 +13,23 @@
     <li class="nav-item">
       <a routerLink="transfer-money" routerLinkActive="active" class="nav-link">Transfer Money</a>
     </li>
-  </ul>
-</nav>
-<h1 class="text-center">{{title}}</h1>
 
-<div class="container">
+  </ul>
+
+</nav>
+<!--<h1 class="text-center" >{{title}}</h1>-->
+
+
+
+
+
+<!--<div class="container">-->
  <router-outlet></router-outlet>
-</div>
-<!--<footer class="footer">
+<!--</div>-->
+
+<footer class="footer">
   <div class="container">
     <span> All Rights Reserved 2021 @anu.com</span>
   </div>
-</footer>-->
+</footer>
 

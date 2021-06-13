@@ -7,7 +7,7 @@ import {Employee} from './employee';
   providedIn: 'root'
 })
 export class EmployeeService {
-private baseURL = 'http://localhost:8080/api/v1/employee';
+private baseURL = 'http://localhost:9090/api/v1/employee';
   constructor(private httpclient: HttpClient) { }
   getEmployeeList(): Observable<Employee[]>{
     return this.httpclient.get<Employee[]>(`${this.baseURL}`);
@@ -19,7 +19,11 @@ private baseURL = 'http://localhost:8080/api/v1/employee';
    return  this.httpclient.get<Employee>(`${this.baseURL}/${id}`);
   }
   // tslint:disable-next-line:ban-types
-  updateEmployee(id: number, employee: Employee): Observable<Object>{
+  updateEmployee(id: number, employee: Employee): Observable<any>{
+    return this.httpclient.put(`${this.baseURL}/${id}`, employee);
+  }
+
+  updateBalance(id: number, employee: Employee): Observable<any>{
     return this.httpclient.put(`${this.baseURL}/${id}`, employee);
   }
 // tslint:disable-next-line:ban-types

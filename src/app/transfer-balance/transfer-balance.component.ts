@@ -16,6 +16,9 @@ export class TransferBalanceComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit(): void {
+    console.log(this.route);
+    console.log(this.route.snapshot);
+    console.log(this.route.snapshot.params);
     this.id = this.route.snapshot.params.id;
     this.employeeService.getEmployeeById(this.id).subscribe(data => {
       this.employee = data;
@@ -30,7 +33,7 @@ export class TransferBalanceComponent implements OnInit {
   }
   // tslint:disable-next-line:typedef
   gotoEmployeeList(){
-    this.router.navigate(['/transfer-money']);
+    this.router.navigate(['/employees']);
   }
 
 }
