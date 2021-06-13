@@ -1,3 +1,5 @@
+<div class="container">
+<div clas="bg">
 <h2>Customer-List</h2>
 <table class="table table-striped">
   <thead>
@@ -6,8 +8,7 @@
     <th>Last Name</th>
     <th>Email Id</th>
     <th>Bank Name</th>
-    <th>Account Number</th>
-    <th>Account Balance</th>
+
     <th>Action</th>
   </tr>
   </thead>
@@ -17,12 +18,13 @@
     <td>{{employee.lastName}}</td>
     <td>{{employee.emailId}}</td>
     <td>{{employee.bankName}}</td>
-    <td>{{employee.accountNumber}}</td>
-    <td>{{employee.balance}}</td>
+
+
     <td>
     <button (click)="transfer(employee.id)" class="btn btn-info">Transfer</button>
     </td>
   </tr>
   </tbody>
 </table>
-
+</div>
+</div>

@@ -26,7 +26,8 @@ export class UpdateEmployeeComponent implements OnInit {
   // tslint:disable-next-line:typedef
   onSubmit(){
 this.employeeService.updateEmployee(this.id, this.employee).subscribe(data => {
-  this.gotoEmployeeList();
+    console.log(data);
+    this.gotoEmployeeList();
 }
 , error => console.log(error));
   }
