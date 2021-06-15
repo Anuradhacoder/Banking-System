@@ -1,35 +1,35 @@
 <!--<div [style.background]="'url(assets/image/n3.jpg)'">-->
-<div class="container">
-<div class="bg">
-<div class="col-md-6 offset-md-3" >
-<h3 [ngStyle]="{'color':'white'}">Transfer Money</h3>
+
+
+<div class="col-md-6 offset-md-3" id="container">
+<h3 >Transfer Money</h3>
 <form (ngSubmit)="onSubmit()">
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label" >
     <label>First Name</label>
     <input type="text" class="form-control" id="firstName"
            [(ngModel)]="employee.firstName" name="firstName">
   </div>
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label" >
     <label>Last Name</label>
     <input type="text" class="form-control" id="lastName"
            [(ngModel)]="employee.lastName" name="lastName">
   </div>
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label">
     <label>Email ID</label>
     <input type="text" class="form-control" id="emailId"
            [(ngModel)]="employee.emailId" name="emailId">
   </div>
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label" >
     <label>Bank Name</label>
     <input type="text" class="form-control" id="bankName"
            [(ngModel)]="employee.bankName" name="bankName">
   </div>
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label" >
     <label>Account Number</label>
     <input type="text" class="form-control" id="accountNumber"
            [(ngModel)]="employee.accountNumber" name="accountNumber">
   </div>
-  <div class="form-label" [ngStyle]="{'color':'white'}">
+  <div class="form-label" >
     <label>Amount</label>
     <input type="text" class="form-control" id="Amount"
            [(ngModel)]="employee.balance"   name="Amount">
@@ -39,5 +39,4 @@
 
 </form>
 </div>
-</div>
-</div>
+

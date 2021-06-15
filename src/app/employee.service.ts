@@ -23,8 +23,9 @@ private baseURL = 'http://localhost:9090/api/v1/employee';
     return this.httpclient.put(`${this.baseURL}/${id}`, employee);
   }
 
-  updateBalance(id: number, employee: Employee): Observable<any>{
-    return this.httpclient.put(`${this.baseURL}/${id}`, employee);
+  update(id: number, employee: Employee): Observable<any>{
+    const put = this.httpclient.put(`${this.baseURL}/${id}/${employee.balance}`, employee);
+    return put;
   }
 // tslint:disable-next-line:ban-types
   deleteEmployee(id: number): Observable<Object>{
