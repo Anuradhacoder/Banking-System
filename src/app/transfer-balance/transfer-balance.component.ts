@@ -10,6 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class TransferBalanceComponent implements OnInit {
   id: number;
+
   employee: Employee = new  Employee();
   constructor(private employeeService: EmployeeService,
               private route: ActivatedRoute,
@@ -26,7 +27,7 @@ export class TransferBalanceComponent implements OnInit {
   }
   // tslint:disable-next-line:typedef
   onSubmit(){
-    this.employeeService.updateEmployee(this.id, this.employee).subscribe(data => {
+    this.employeeService.update(this.id,  this.employee).subscribe(data => {
         this.gotoEmployeeList();
       }
       , error => console.log(error));

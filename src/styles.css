@@ -1,20 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-.footer{
+/*.footer{
   position: absolute;
-  bottom: 0;
+  margin-bottom: 0px;
   width: 100%;
-  height: 70px;
+  height: 30px;
   background-color: black;
   text-align: center;
   color: white;
-}
+}*/
 
-.container-img {
-  background-image: url("/assets/image/n3.jpg");
-}
 
-body {
-  background-image: url("/assets/image/n3.jpg");
-}
+
+
 

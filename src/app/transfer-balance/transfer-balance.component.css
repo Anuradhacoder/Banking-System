@@ -1,7 +1,7 @@
 .bg {
   /* The image used */
   margin-top: 12px;
-  background-image: url("/../../assets/image/th.jpg");
+  background-image: url("/../../assets/image/b7.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -9,4 +9,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container{
+  height:80%;
+}
+
 
